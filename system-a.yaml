@@ -20,3 +20,13 @@ spec:
   owner: team-a
   system: System-A
   providesApis: [system-a-backend-api]
+---
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: system-a-db
+  description: Stores Data related to System A
+spec:
+  type: database
+  owner: team-a
+  system: System-A
