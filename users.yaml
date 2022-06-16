@@ -6,6 +6,7 @@ metadata:
 spec:
   type: team
   members: [the-ceo]
+  children: []
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Group
@@ -15,6 +16,7 @@ metadata:
 spec:
   type: team
   members: [dev-a1]
+  children: []
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Group
@@ -24,6 +26,7 @@ metadata:
 spec:
   type: team
   members: [dev-a1]
+  children: []
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Group
@@ -33,7 +36,10 @@ metadata:
 spec:
   type: team
   members: [qa-a1]
+  children: []
 ---
+
+
 apiVersion: backstage.io/v1alpha1
 kind: User
 metadata:
