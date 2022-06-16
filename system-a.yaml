@@ -1,0 +1,10 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: system-a-web
+  description: Web App for System A
+spec:
+  type: website
+  lifecycle: production
+  owner: team-a
+  system: System-A
