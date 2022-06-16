@@ -20,6 +20,8 @@ spec:
   owner: team-a
   system: System-A
   providesApis: [system-a-backend-api]
+  dependsOn: 
+    - resource:system-a-db
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Resource
@@ -30,3 +32,5 @@ spec:
   type: database
   owner: team-a
   system: System-A
+  depedencyOf: 
+    - system-a-backend
