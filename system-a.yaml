@@ -8,3 +8,15 @@ spec:
   lifecycle: production
   owner: team-a
   system: System-A
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: system-a-backend
+  description: Backend Services for System A
+spec:
+  type: service
+  lifecycle: production
+  owner: team-a
+  system: System-A
+  providesApis: system-a-backend-api
