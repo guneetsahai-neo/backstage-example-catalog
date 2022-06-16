@@ -5,33 +5,67 @@ metadata:
   description: Group of Privileged Users
 spec:
   type: team
-  children: [ceo-singh]
+  members: [the-ceo]
+---
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: team-a
+  description: Team that built System A
+spec:
+  type: team
+  members: [dev-a1]
+---
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: devs
+  description: Group of All Developers
+spec:
+  type: team
+  members: [dev-a1]
+---
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: qas
+  description: Group of All Testers
+spec:
+  type: team
+  members: [qa-a1]
 ---
 apiVersion: backstage.io/v1alpha1
 kind: User
 metadata:
-  name: ceo-singh
+  name: the-ceo
 spec:
   memberOf: [privileged]
 ---
 apiVersion: backstage.io/v1alpha1
 kind: User
 metadata:
-  name: lead-a-singh
+  name: lead-a
 spec:
-  memberOf: []
+  memberOf: [devs]
 ---
 apiVersion: backstage.io/v1alpha1
 kind: User
 metadata:
-  name: lead-b-singh
+  name: lead-b
 spec:
-  memberOf: []
+  memberOf: [qas]
 ---
 apiVersion: backstage.io/v1alpha1
 kind: User
 metadata:
-  name: dev-singh
+  name: dev-a1
 spec:
-  memberOf: []
+  memberOf: [team-a,devs]
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: qa-a1
+spec:
+  memberOf: [team-a,qas]
 ---
