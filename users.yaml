@@ -15,7 +15,7 @@ metadata:
   description: Team that built System A
 spec:
   type: team
-  members: [dev-a1,qa-a1]
+  members: [lead-a,dev-a1,qa-a1]
   children: []
 ---
 apiVersion: backstage.io/v1alpha1
