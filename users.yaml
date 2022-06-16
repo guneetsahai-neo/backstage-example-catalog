@@ -1,0 +1,23 @@
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  	name: privileged
+  	description: Group of Privileged Users
+spec:
+  	type: team
+  	children: [ceo-singh]
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: ceo-singh
+spec:
+  memberOf: [privileged]
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: dev-singh
+spec:
+  memberOf: []
+---
