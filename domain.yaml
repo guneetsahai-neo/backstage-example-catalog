@@ -4,7 +4,7 @@ metadata:
   name: MyExampleDomain
   description: Just a Dummy Domain
 spec:
-  owner: ceo-singh
+  owner: user:ceo-singh
 ---
 apiVersion: backstage.io/v1alpha1
 kind: System
