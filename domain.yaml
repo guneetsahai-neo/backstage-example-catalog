@@ -1,0 +1,25 @@
+apiVersion: backstage.io/v1alpha1
+kind: Domain
+metadata:
+  name: MyExampleDomain
+  description: Just a Dummy Domain
+spec:
+  owner: ceo-singh
+---
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: System-A
+  description: Just a System
+spec:
+  owner: lead-a-singh
+  domain: MyExampleDomain
+---
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: System-B
+  description: Just Another System
+spec:
+  owner: lead-b-singh
+  domain: MyExampleDomain
