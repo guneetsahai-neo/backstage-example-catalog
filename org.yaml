@@ -1,0 +1,10 @@
+apiVersion: backstage.io/v1alpha1
+kind: Location
+metadata:
+  name: org-data
+spec:
+  type: url
+  targets:
+    - https://github.com/guneetsahai-neo/backstage-system-a/blob/main/users.yaml
+    - https://github.com/guneetsahai-neo/backstage-system-a/blob/main/domain.yaml
+    - https://github.com/guneetsahai-neo/backstage-system-a/blob/main/system-a.yaml
