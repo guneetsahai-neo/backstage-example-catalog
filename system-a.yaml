@@ -19,4 +19,4 @@ spec:
   lifecycle: production
   owner: team-a
   system: System-A
-  providesApis: system-a-backend-api
+  providesApis: [system-a-backend-api]
