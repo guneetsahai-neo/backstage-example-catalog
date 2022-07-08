@@ -6,7 +6,7 @@ metadata:
 spec:
   type: openapi
   lifecycle: production
-  owner: dev-a1
+  owner: user:dev-a1
   system: System-A
   definition: |
     openapi: 3.0.0
