@@ -32,7 +32,7 @@ metadata:
   description: Stores Data related to System A
 spec:
   type: database
-  owner: user:default/qa-a1
+  owner: user:qa-a1
   system: System-A
   depedencyOf: 
     - system-a-backend
