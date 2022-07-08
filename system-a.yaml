@@ -19,7 +19,7 @@ metadata:
 spec:
   type: service
   lifecycle: production
-  owner: user:default/dev-a1
+  owner: user:dev-a1
   system: System-A
   providesApis: [system-a-backend-api]
   dependsOn: 
