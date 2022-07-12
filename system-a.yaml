@@ -19,7 +19,7 @@ metadata:
 spec:
   type: service
   lifecycle: production
-  owner: user:dev-a1
+  owner: user:guneetsahai
   system: System-A
   providesApis: [system-a-backend-api]
   dependsOn: 
@@ -32,7 +32,7 @@ metadata:
   description: Stores Data related to System A
 spec:
   type: database
-  owner: user:qa-a1
+  owner: user:guneetsahai-neo
   system: System-A
   depedencyOf: 
     - system-a-backend
